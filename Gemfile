@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0.rc4'
+gem 'rails', '3.1.0'
 
 # Assets and forms
 gem 'paperclip'
@@ -8,7 +8,7 @@ gem 'formtastic', :git => 'git://github.com/justinfrench/formtastic.git'
 
 # Asset template engines
 gem 'json'
-gem 'sass-rails', "~> 3.1.0.rc"
+gem 'sass-rails', "~> 3.1.0"
 gem 'coffee-script'
 
 group :development, :test do
@@ -17,8 +17,8 @@ group :development, :test do
   gem 'jeweler'
   gem 'sqlite3'
   gem 'thin'
-  gem 'ruby-debug19', :require => 'ruby-debug'
-  gem 'evergreen', :git => 'git://github.com/jnicklas/evergreen.git', :submodules  => true, :require => 'evergreen/rails'
+  gem 'ruby-debug', :require => 'ruby-debug'
+  # gem 'evergreen', :git => 'git://github.com/jnicklas/evergreen.git', :submodules  => true, :require => 'evergreen/rails'
 end
 
 group :test do
