@@ -1,4 +1,16 @@
 GIT
+  remote: git://github.com/jnicklas/evergreen.git
+  revision: 6bfd874f0b362041b691e3c4b5b2200f269067a8
+  submodules: true
+  specs:
+    evergreen (0.4.1)
+      capybara (~> 1.0)
+      coffee-script
+      json_pure
+      launchy
+      sinatra (~> 1.1)
+
+GIT
   remote: git://github.com/justinfrench/formtastic.git
   revision: 8843ed225e18fd242f21f22959047fe9354dc163
   specs:
@@ -37,6 +49,7 @@ GEM
       activesupport (= 3.1.0)
     activesupport (3.1.0)
       multi_json (~> 1.0)
+    addressable (2.2.6)
     arel (2.2.1)
     bcrypt-ruby (3.0.0)
     builder (3.0.0)
@@ -90,6 +103,8 @@ GEM
     json (1.5.4)
     json_pure (1.5.4)
       spruz (~> 0.2.8)
+    launchy (2.0.5)
+      addressable (~> 2.2.6)
     linecache (0.46)
       rbx-require-relative (> 0.0.4)
     mail (2.3.0)
@@ -148,6 +163,9 @@ GEM
       ffi (>= 1.0.7)
       json_pure
       rubyzip
+    sinatra (1.2.6)
+      rack (~> 1.1)
+      tilt (>= 1.2.2, < 2.0)
     sprockets (2.0.0)
       hike (~> 1.2)
       rack (~> 1.0)
@@ -180,6 +198,7 @@ DEPENDENCIES
   coffee-script
   cucumber-rails
   database_cleaner
+  evergreen!
   formtastic!
   jeweler
   jquery-rails

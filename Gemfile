@@ -18,7 +18,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'thin'
   gem 'ruby-debug', :require => 'ruby-debug'
-  # gem 'evergreen', :git => 'git://github.com/jnicklas/evergreen.git', :submodules  => true, :require => 'evergreen/rails'
+  gem 'evergreen', :git => 'git://github.com/jnicklas/evergreen.git', :submodules  => true, :require => 'evergreen/rails'
 end
 
 group :test do

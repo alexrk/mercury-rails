@@ -12319,7 +12319,7 @@ Showdown.converter = function() {
         data = jQuery.toJSON(data);
       }
       return jQuery.ajax(url, {
-        type: 'POST',
+        type: 'PUT',
         data: {
           content: data
         },
