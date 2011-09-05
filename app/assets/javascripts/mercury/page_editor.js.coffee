@@ -125,14 +125,13 @@ class @Mercury.PageEditor
       return "You have unsaved changes.  Are you sure you want to leave without saving them first?"
     return null
 
-
   save: ->
     url = @saveUrl ? @iframeSrc()
     data = @serialize()
     Mercury.log('saving', data)
     data = jQuery.toJSON(data) unless @options.saveStyle == 'form'
     jQuery.ajax url, {
-      type: 'POST'
+      type: 'PUT'
       data: {content: data}
       success: =>
         Mercury.changes = false
